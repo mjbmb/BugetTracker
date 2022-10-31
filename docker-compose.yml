@@ -1,0 +1,20 @@
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql
+    volumes:
+      - "./Database/mysql/data:/var/lib/mysql"
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: CustomerDataAndOperations
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: teamtwo
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - 8000:8080
+    restart: always
