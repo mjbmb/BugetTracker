@@ -23,7 +23,7 @@ import axios from "axios";
     },
     methods: {
         getUser() {
-            axios.get()
+            axios.get("localhost:9090/restapi/customers/{username}/{password}")
         }
     }
 }
