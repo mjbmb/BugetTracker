@@ -12,13 +12,15 @@ import ProjectHeader from '@/components/Header.vue';
 import ProjectFooter from '@/components/Footer.vue';
 import GeneralText from '@/components/GeneralText.vue';
 import GeneralTitle from '@/components/GeneralTitle.vue';
+import LogInOutPage from './LogInOutPage.vue';
 export default {
     name:"HomePageVue",
     components: {
     ProjectHeader,
     ProjectFooter,
     GeneralText,
-    GeneralTitle
+    GeneralTitle,
+    
     }
 };
 </script>

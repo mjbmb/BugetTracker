@@ -3,7 +3,7 @@
     <GeneralTitle text="Login"></GeneralTitle>
     <GeneralInput></GeneralInput>
     <GeneralInput></GeneralInput>
-    <GeneralButton name="Login"></GeneralButton>
+    <GeneralButton name="{{buttonName}}" v-on:click="logInOutUser()"></GeneralButton>
     <Footer></Footer>
 </template>
 
@@ -22,6 +22,14 @@ export default {
     GeneralTitle,
     GeneralButton,
     GeneralInput
+},
+data(){
+    buttonName: Login
+},
+methods:{
+    logInOutUser(){
+        fetch("")
+    }
 }
 };
 </script>
